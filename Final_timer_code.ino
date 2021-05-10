@@ -55,7 +55,7 @@ delay(100);*/
 
 // If start button changes from HIGH to LOW start/pause the timer
 attachInterrupt(digitalPinToInterrupt(start_button), check_button, FALLING);    
-}                                                                                
+}                                                                               
 
 void loop(){
 
@@ -175,8 +175,7 @@ void countDown(){
      }
   }   //End of void countDown function
     
-     
-void check_button()
+ void check_button()
 {
       start_pause = 1;
 }
