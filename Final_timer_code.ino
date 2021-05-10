@@ -155,7 +155,7 @@ void countDown(){
       Num = 0;
      for(int i = 0; i < 10; i++)           
       {
-       // Turn ON the buzzer for 5 times and also Blink the display
+       // Turn ON the buzzer for 10 times and also Blink the display
        //tone(buzz_pin, buzz_freq);
        display.showNumberDec(0, true);
        delay(300);
