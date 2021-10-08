@@ -53,7 +53,7 @@ display.showNumberDecEx(seconds, 0, true, 2, 2);
 display.showNumberDecEx(minutes, 0b11100000, true, 2, 0);
 delay(100);*/
 
-// If start button changes from HIGH to LOW start/pause the timer
+// If start button changes from HIGH to LOW then START/PAUSE the timer
 attachInterrupt(digitalPinToInterrupt(start_button), check_button, FALLING);    
 }                                                                               
 
