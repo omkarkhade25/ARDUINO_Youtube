@@ -7,9 +7,8 @@ After the time is set by us we will calculate the total time in ‘seconds’ us
 Let’s say we have set the count down time of 30 seconds. Now, we will start the timer and for that we will press the ‘Start’ button. After pressing the start button, 
 if(start_pause == 1) condition will get satisfied and the 
 function named ‘countDown’ will get called. The ‘countDown’ function does the main job of decrementing the timer by one second and updating the TM1637 display. 
-The start/pause button in this project is used as ‘hardware interrupt’ i.e whenever you press this button the Arduino will stop doing its work and will go in the function called ISR(check_button in this case) and return back to whatever it was doing after executing the code written in the ISR.
-This is how whenever you press the start/pause button the value of
-‘start_pause’ gets updated.
+The start/pause button in this project is used as ‘hardware interrupt’ i.e whenever you press this button the Arduino will stop doing its work and will go in the function called ISR(check_button in this case) and return back
+to whatever it was doing after executing the code written in the ISR. This is how whenever you press the start/pause button the value of ‘start_pause’ gets updated.
 
 NOW, WE ARE IN THE FUNCTION ‘COUNTDOWN’ 
 if(current_time - previous_time >= 1000)
